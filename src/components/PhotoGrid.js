@@ -10,7 +10,7 @@ export default function PhotoGrid() {
   }, []);
   return (
     <div className="container">
-    <button className="epic-button" href="">EPIC: Earth Polychromatic Imaging Camera</button>
+        <a href="mars.html"><button className="mars-button">Mars Rover Images</button></a>
       <div className="entry">
           <PhotoCard key={photoData.url} imgUrl={photoData.url} date={photoData.date} title={photoData.title} explanation={photoData.explanation} />
       </div>
