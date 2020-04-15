@@ -6,7 +6,6 @@ export default function PhotoGrid() {
   const [photoData, setPhotoData] = useState([]);
   useEffect(() => {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
-    .then(response => {console.log(response.data); return response})
     .then(response => setPhotoData(response.data));
   }, []);
   return (
