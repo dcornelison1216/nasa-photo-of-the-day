@@ -1,14 +1,18 @@
 import React from "react";
 import "./App.css";
+import PhotoGrid from "./components/PhotoGrid";
+import styled from "styled-components";
+
+const StyledApp = styled.div`
+  font-family: sans-serif;
+  text-align: left;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <StyledApp>
+      <PhotoGrid />
+    </StyledApp>
   );
 }
 
