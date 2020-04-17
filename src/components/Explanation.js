@@ -1,8 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+
+const DescriptionP = styled.p`
+  padding: 0 2rem;
+`;
 
 const Explanation = props => {
   return(
-    <p className="explanation">Description: {props.explanation}</p>
+    <DescriptionP>Description: {props.explanation}</DescriptionP>
+    // <p className="explanation">Description: {props.explanation}</p>
   );
 };
 
