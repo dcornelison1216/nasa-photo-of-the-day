@@ -1,8 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledDate = styled.p`
+  font-size: 1.3rem;
+  margin-top: 0;
+`;
 
 const Date = props => {
   return(
-    <p>Date: {props.date}</p>
+    <StyledDate>Date: {props.date}</StyledDate>
   );
 };
 
